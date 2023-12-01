@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "icpkushitesatmksuhackfest_backend": {
+      "candid": "src/icpkushitesatmksuhackfest_backend/icpkushitesatmksuhackfest_backend.did",
+      "package": "icpkushitesatmksuhackfest_backend",
+      "type": "rust"
+    },
+    "icpkushitesatmksuhackfest_frontend": {
+      "dependencies": [
+        "icpkushitesatmksuhackfest_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/icpkushitesatmksuhackfest_frontend/src/index.html"
+      },
+      "source": [
+        "src/icpkushitesatmksuhackfest_frontend/assets",
+        "dist/icpkushitesatmksuhackfest_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
